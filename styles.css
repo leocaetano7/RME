@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal do site inteiro */
+
+}
+
+.painel-superior {
+    background-color: #377bc9;
+    color: #fff;
+    padding: 8px 440px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 69px; 
+    overflow: hidden;
+}
+
+.logo img {
+    width: auto;
+    height: 100px; 
+    margin-right: 250px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.botao {
+    position: relative; 
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.4s; 
+}
+
+.botao::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #fff;
+    transition: width 0.3s ease-out; 
+}
+
+.botao:hover::before {
+    width: 100%; 
+    transition: width 0.4s ease-in; 
+}
+
+/*----------------DESTAQUES---------*/
+
+.destaques-aba {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 300px; /* Defina a altura máxima da aba */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+    padding: 20px;
+    box-sizing: border-box; /* Para incluir padding na largura total */ 
+    transition: width 0.4s ease-out; /* Animação da largura da linha */
+    animation: slidein 2s ease-in-out forwards;
+
+
+}
+
+.destaques-aba h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.destaques-aba p {
+    margin: 0;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/*----------------CARROSEL----------*/
+
+.swiper-container {
+    position: relative; /* Importante para que o z-index funcione corretamente */
+    z-index: 0; /* Valor padrão, coloca o slide abaixo da aba de destaques */
+}
+
+.carrosel-container {
+    width: calc(100% - 40px); /* Ajusta o tamanho do container para incluir a margem entre os slides */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal */
+    overflow-y: hidden; /* Remove barra de rolagem vertical */
+    white-space: nowrap; /* Evita que os slides quebrem linha */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do carrossel */
+}
+
+.carrosel-slide {
+    margin-top: 1%;
+    display: inline-block; /* Faz os slides ficarem lado a lado */
+    text-align: center;
+    vertical-align: top; /* Alinha os slides ao topo */
+    margin-right: 80px; /* Espaçamento entre os slides */
+    margin-left: 5%;
+}
+
+.carrosel-slide img {
+    width: 500px; /* Define uma largura fixa para as imagens */
+    height: 300px; /* Define a altura desejada para as imagens */
+    max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho do slide */
+}
+
+.carrosel-slide h3,
+.carrosel-slide p {
+    margin: 20px 0; /* Adiciona espaço entre o texto e a imagem */
+}
+
+.carrosel-container::-webkit-scrollbar {
+    height: 10px; /* Define a altura da barra de rolagem */
+}
+
+.carrosel-container::-webkit-scrollbar-thumb {
+    background-color: #377bc9; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.carrosel-container::-webkit-scrollbar-track {
+    background-color: #646262; /* Cor do fundo da barra de rolagem */
+}
+
+.carrosel-container::-webkit-scrollbar-track-piece:start {
+    background-color: transparent; /* Define a cor de fundo do trilho horizontal */
+    width: 20px; /* Ajusta a largura do trilho horizontal */
+}
+
+.carrosel-container::-webkit-scrollbar-track-piece:end {
+    background-color: transparent; /* Define a cor de fundo do trilho horizontal */
+    width: 20px; /* Ajusta a largura do trilho horizontal */
+}
+
+
+
+/*--------------contexto----------*/
+
+
+.contexto {
+    margin-top: 25%; /* Adicione margem na parte superior do conteúdo "contexto" */
+}
+
