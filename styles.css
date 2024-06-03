@@ -134,6 +134,11 @@ body {
     color: inherit;
 }
 
+.carrosel-slide a:visited {
+    color: inherit; 
+}
+
+
 .panel {
     background: #aaaaaa; 
     padding: 10px; 
