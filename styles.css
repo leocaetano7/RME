@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Oculta a barra de rolagem horizontal do site inteiro */
+    overflow-x: hidden; 
 }
 
 .painel-superior {
@@ -64,20 +64,20 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-height: 300px; /* Defina a altura máxima da aba */
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+    max-height: 300px; 
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
-    box-sizing: border-box; /* Para incluir padding na largura total */ 
-    transition: width 0.4s ease-out; /* Animação da largura da linha */
+    box-sizing: border-box; 
+    transition: width 0.4s ease-out; 
     animation: slidein 2s ease-in-out forwards;
 }
 
 .destaques-aba h2 {
-    margin: 0 10px 0 0; /* Ajusta a margem para distanciar do texto à direita */
-    font-size: 24px; /* Aumenta o tamanho da fonte */
-    color: #090a0a; /* Cor principal do texto */
-    font-weight: bold; /* Negrito */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
+    margin: 0 10px 0 0; 
+    font-size: 24px; 
+    color: #090a0a; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
     margin-left: 75px;
 }
 
@@ -103,12 +103,12 @@ body {
 
 
 .swiper-container {
-    position: relative; /* Importante para que o z-index funcione corretamente */
-    z-index: 0; /* Valor padrão, coloca o slide abaixo da aba de destaques */
+    position: relative; 
+    z-index: 0; 
 }
 
 .swiper-slide {
-    position: relative; /* Importante para posicionar o conteúdo */
+    position: relative; 
 }
 
 .saiba-mais {
@@ -133,13 +133,13 @@ body {
 
 .slide-content {
     position: absolute;
-    bottom: 150px; /* Ajuste a altura do conteúdo */
+    bottom: 150px; 
     left: 20%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto para melhor legibilidade */
-    z-index: 5; /* Para garantir que o texto fique acima da imagem */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
+    z-index: 5; 
 }
 
 .slide-content h3 {
@@ -157,37 +157,37 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
-    box-sizing: border-box; /* Para incluir padding na largura total */
-    z-index: 1; /* Define a ordem de empilhamento */
+    box-sizing: border-box; 
+    z-index: 1; 
 }
 
 .slide-content {
     position: absolute;
-    top: 90px; /* Ajuste a posição vertical do conteúdo */
+    top: 90px; 
     text-align: left;
     color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto para melhor legibilidade */
-    z-index: 5; /* Para garantir que o texto fique acima da imagem */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
+    z-index: 5; 
     padding: 20px;
-    background: rgba(0, 0, 0, 0.4); /* Fundo preto transparente para destacar o texto */
-    border-radius: 10px; /* Borda arredondada para o fundo */
-    max-width: 50%; /* Para evitar que o texto ocupe toda a largura da imagem */
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 10px; 
+    max-width: 50%; 
     font-family:Arial, Helvetica, sans-serif;
     margin-left: 150px;
-    min-width: 300px; /* Define uma largura mínima para o texto */
+    min-width: 300px;
 
 }
 .slide-content h3 {
     margin: 0 0 10px;
-    font-size: 80px; /* Aumenta o tamanho do título */
+    font-size: 80px; 
     font-weight: bold;
 }
 
 .slide-content p {
     margin: 0 0 15px;
-    font-size: 20px; /* Aumenta o tamanho do parágrafo */
+    font-size: 20px; 
     line-height: 1.4;
 }
 
@@ -200,50 +200,50 @@ body {
 }
 
 .carrosel-container {
-    width: 103%; /* Ajusta o tamanho do container para incluir a margem entre os slides */
+    width: 103%; 
     height: 100%;   
-     overflow-x: auto; /* Adiciona barra de rolagem horizontal */
-    overflow-y: hidden; /* Remove barra de rolagem vertical */
-    white-space: nowrap; /* Evita que os slides quebrem linha */
-    margin-bottom: 20px; /* Adiciona espaço abaixo do carrossel */
-    padding-bottom: 40px; /* Adiciona espaço extra abaixo do conteúdo do carrossel */
-    height: 100%; /* Garante que os slides ocupem toda a altura do carrossel */
+     overflow-x: auto; 
+    overflow-y: hidden; 
+    white-space: nowrap; 
+    margin-bottom: 20px; 
+    padding-bottom: 40px; 
+    height: 100%; 
     margin-right: 5%;
 }
 
 .carrosel-slide {
     margin-top: 1%;
-    display: inline-block; /* Faz os slides ficarem lado a lado */
+    display: inline-block; 
     text-align: center;
-    vertical-align: top; /* Alinha os slides ao topo */
-    margin-right: 80px; /* Espaçamento entre os slides */
+    vertical-align: top; 
+    margin-right: 80px; 
     margin-left: 5%;
 }
 
 .carrosel-slide a {
-    text-decoration: none; /* Remove a decoração do link */
-    color: inherit; /* Inherit color from parent */
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .panel {
-    background: #aaaaaa; /* Cor de fundo do painel */
-    padding: 10px; /* Espaçamento interno do painel */
-    border-radius: 10px; /* Borda arredondada do painel */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o painel */
-    transition: transform 0.3s ease-in-out; /* Adiciona animação de transição */
+    background: #aaaaaa; 
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
 }
 
 .carrosel-slide img {
-    width: 500px; /* Define uma largura fixa para as imagens */
-    height: 300px; /* Define a altura desejada para as imagens */
-    max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho do slide */
-    border-radius: 10px; /* Borda arredondada para as imagens */
+    width: 500px; 
+    height: 300px; 
+    max-width: 100%; 
+    border-radius: 10px;
 }
 
 .carrosel-slide h3,
 .carrosel-slide p {
-    margin: 20px 0; /* Adiciona espaço entre o texto e a imagem */
-    transition: color 0.3s ease-in-out; /* Adiciona animação de transição */
+    margin: 20px 0;
+    transition: color 0.3s ease-in-out; 
 }
 
 .carrosel-slide:hover .panel {
@@ -252,34 +252,34 @@ body {
 
 .carrosel-slide:hover h3,
 .carrosel-slide:hover p {
-    color: #377bc9; /* Muda a cor do texto */
-    transition: transform 0.3s ease-in-out; /* Adiciona animação de transição */
+    color: #377bc9; 
+    transition: transform 0.3s ease-in-out; 
     transform: scale(1.05); /
 
 }
 
 .carrosel-container::-webkit-scrollbar {
     margin-right: 50%;
-    height: 10px; /* Define a altura da barra de rolagem */
+    height: 10px; 
 }
 
 .carrosel-container::-webkit-scrollbar-thumb {
-    background-color: #377bc9; /* Cor da barra de rolagem */
-    border-radius: 10px; /* Borda arredondada */
+    background-color: #377bc9; 
+    border-radius: 10px; 
 }
 
 .carrosel-container::-webkit-scrollbar-track {
-    background-color: #646262; /* Cor do fundo da barra de rolagem */
+    background-color: #646262; 
 }
 
 .carrosel-container::-webkit-scrollbar-track-piece:start {
-    background-color: transparent; /* Define a cor de fundo do trilho horizontal */
-    width: 20px; /* Ajusta a largura do trilho horizontal */
+    background-color: transparent; 
+    width: 20px; 
 }
 
 .carrosel-container::-webkit-scrollbar-track-piece:end {
-    background-color: transparent; /* Define a cor de fundo do trilho horizontal */
-    width: 20px; /* Ajusta a largura do trilho horizontal */
+    background-color: transparent; 
+    width: 20px; 
 }
 
 
@@ -290,7 +290,7 @@ body {
 
 
 .contexto {
-    margin-top: 30%; /* Adicione margem na parte superior do conteúdo "contexto" */
+    margin-top: 30%;
     margin-left: 2%;
 }
 
